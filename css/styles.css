@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background-color: black;
+  height: 70px;
+}
+ul {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+li a {
+  color: aliceblue;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+.imagenPrincipal {
+  position: relative;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+.backgroundEffects {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pContainer {
+  color: aliceblue;
+  font-size: 20px;
+  text-align: center;
+}
+.pContainer p {
+  width: 700px;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.cualidadesEmpresa {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.cualidadesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 200px;
+  text-align: center;
+  justify-content: center;
+}
+.cualidadesContainer h2 {
+  margin-top: 20px;
+}
+.unPocoDeNosotros {
+  width: 100%;
+  height: 250px;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nosotrosContainer {
+  text-align: center;
+  width: 700px;
+}
+.nosotrosContainer p {
+  margin-top: 20px;
+}
+.finalIndex {
+  margin-top: 20px;
+  position: relative;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+}
+.txtContainer {
+  color: aliceblue;
+}
+.opinion {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+footer {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  margin-top: 20px;
+  background-color: #222222;
+  justify-content: center;
+  align-items: center;
+  color: #bdbdbd;
+  justify-content: space-evenly;
+}
+
+.otrosTextos {
+  display: flex;
+}
+.otrosTextos a {
+  margin-left: 30px;
+  color: #bdbdbd;
+}
+/* quienes somos */
+.quienesSomos {
+  height: 550px;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textoQS {
+  display: flex;
+  width: 50%;
+  align-content: center;
+}
+.textoContainer p {
+  margin-top: 15px;
+}
+
+.imgQS {
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+}
+
+/* servicios */
+.fotosProyectos {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.fotosContainer {
+  width: 70%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.fotoSimulador {
+  width: 350px;
+  height: 300px;
+  border: 1px solid black;
+  margin: 10px 10px;
+}
+.carousel {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+.itemsServicios {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.itemsContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 300px;
+  height: 100%;
+}
+.itemsContainer p {
+  height: 100px;
+}
+/* contacto */
+.formulario {
+  width: 100%;
+  height: 500px;
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nombre_y_mail {
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  margin-top: 20px;
+}
+textarea {
+  width: 500px;
+  margin-top: 10px;
+}
+
+.imgIcon {
+  width: 50px;
+  height: 50px;
+}
+.redesSociales {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.redesContainer {
+  display: flex;
+  width: 300px;
+  justify-content: space-evenly;
+}
+
+.btn-success {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
