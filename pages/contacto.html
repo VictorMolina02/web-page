@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Pacifico&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <!-- boostrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
@@ -12,55 +19,100 @@
     />
     <!-- css main -->
     <link rel="stylesheet" href="../css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <title>Contacto | Servicios del Sur</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="./quienesSomos.html">Quienes Somos</a></li>
-        <li><a href="./servicios.html">Nuestros Servicios</a></li>
-        <li><a href="#">Contactanos</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-aos="fade-down">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            class="logo"
+            src="../img/logo_blanco al fin.png"
+            alt=""
+          />Servicios Del Sur</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >INICIO</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./quienesSomos.html">QUIENES SOMOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./servicios.html">NUESTROS SERVICIOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link actual" href="#">CONTACTANOS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <main>
+    <main data-aos="fade-down">
       <section class="imagenPrincipal">
         <div class="backgroundEffects">
           <div class="pContainer">
             <h1>Contactanos</h1>
             <p>
-              Para ponerse en contacto, por favor complete el formulario a
-              continuación y le responderemos lo antes posible.
+              Completa el formulario a continuación y le responderemos lo antes
+              posible.
             </p>
+            <img class="logocoso" src="../img/logo_blanco al fin.png" alt="" />
           </div>
         </div>
         <img src="../img/copia estructura.jpg" alt="" />
       </section>
     </main>
-    <section class="formulario">
-      <form action="">
-        <div class="nombre_y_mail">
+    <section class="formulario" data-aos="fade-down">
+      <div class="formContainer">
+        <form
+          action="https://formsubmit.co/molinavitillo@gmail.com"
+          method="POST"
+        >
           <div class="inputContainer">
             <label for="nombre_y_apellido">Nombre y Apellido</label>
-            <input type="text" name="" id="" />
+            <input type="text" name="name" />
+            <div class="inputContainer">
+              <label for="mail">Tu mail</label>
+              <input type="email" name="email" />
+            </div>
           </div>
           <div class="inputContainer">
-            <label for="mail">Tu mail</label>
-            <input type="email" name="" id="" />
+            <label for="">Asunto:</label>
+            <input type="text" name="subject" />
           </div>
-        </div>
-        <div class="inputContainer">
-          <label for="">Deja tu consulta aqui</label>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-        </div>
-        <button class="btn btn-success">Enviar</button>
-        <p>
-          Importante! Tene en cuenta que solo trabajamos en Rio Grande-Tierra
-          del Fuego
-        </p>
-      </form>
+          <div class="inputContainer">
+            <label for="">Deja tu consulta aqui</label>
+            <textarea name="comments" cols="30" rows="10"></textarea>
+          </div>
+          <input class="btn btn-success" type="submit" value="Enviar" />
+          <input
+            type="hidden"
+            name="_next"
+            value="http://127.0.0.1:5501/pages/contacto.html"
+          />
+
+          <input type="hidden" name="_captcha" value="false" />
+        </form>
+      </div>
     </section>
-    <section class="redesSociales">
+    <section class="redesSociales" data-aos="fade-down">
       <h2>O encontranos aqui!</h2>
       <div class="redesContainer">
         <div class="whatsapp">
@@ -92,5 +144,9 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

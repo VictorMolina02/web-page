@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Pacifico&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <!-- boostrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
@@ -18,47 +25,140 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- css main -->
     <link rel="stylesheet" href="../css/styles.css" />
     <title>Nuestros servicios | Servicios del sur</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="./quienesSomos.html">Quienes Somos</a></li>
-        <li><a href="#">Nuestros Servicios</a></li>
-        <li><a href="./contacto.html">Contactanos</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-aos="fade-down">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            class="logo"
+            src="../img/logo_blanco al fin.png"
+            alt=""
+          />Servicios Del Sur</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >INICIO</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./quienesSomos.html">QUIENES SOMOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link actual" href="#">NUESTROS SERVICIOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">CONTACTANOS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <main>
-      <section class="imagenPrincipal">
+      <section class="imagenPrincipal" data-aos="fade-down">
         <div class="backgroundEffects">
           <div class="pContainer">
             <h1>Nuestros servicios</h1>
             <p>Mira lo que podemos hacer para vos</p>
+            <img class="logocoso" src="../img/logo_blanco al fin.png" alt="" />
           </div>
         </div>
         <img src="../img/img casco rec.jpg" alt="" />
       </section>
     </main>
     <section class="fotosProyectos">
-      <!-- <div class="fotosContainer">
-        <div class="fotoSimulador"><p>foto</p></div>
-        <div class="fotoSimulador"><p>foto</p></div>
-        <div class="fotoSimulador"><p>foto</p></div>
-        <div class="fotoSimulador"><p>foto</p></div>
-        <div class="fotoSimulador"><p>foto</p></div>
-        <div class="fotoSimulador"><p>foto</p></div>
-        <div class="fotoSimulador"><p>foto</p></div>
-        <div class="fotoSimulador"><p>foto</p></div>
-        <div class="fotoSimulador"><p>foto</p></div>
-      </div> -->
-      <div class="carousel"><p>carousel</p></div>
+      <div class="gallery fotosContainer">
+        <div class="fotoSimulador">
+          <img
+            class="gallery-image"
+            src="../img/foto obra 1.jpg"
+            alt=""
+            data-aos="zoom-out"
+          />
+        </div>
+        <div class="fotoSimulador">
+          <img
+            class="gallery-image"
+            src="../img/foto obra 2.jpg"
+            alt=""
+            data-aos="zoom-out"
+          />
+        </div>
+        <div class="fotoSimulador">
+          <img
+            class="gallery-image"
+            src="/img/foto obra 3.jpg"
+            data-aos="zoom-out"
+          />
+        </div>
+        <div class="fotoSimulador">
+          <img
+            class="gallery-image"
+            src="/img/foto obra 4.jpg"
+            data-aos="zoom-out"
+          />
+        </div>
+        <div class="fotoSimulador">
+          <img
+            class="gallery-image"
+            src="/img/foto obra 5.jpg"
+            data-aos="zoom-out"
+          />
+        </div>
+        <div class="fotoSimulador">
+          <img
+            class="gallery-image"
+            src="/img/foto obra 8.jpg"
+            data-aos="zoom-out"
+          />
+        </div>
+        <div class="fotoSimulador">
+          <img
+            class="gallery-image"
+            src="/img/foto obra 7.jpg"
+            data-aos="zoom-out"
+          />
+        </div>
+        <div class="fotoSimulador">
+          <img
+            class="gallery-image"
+            src="/img/foto obra 9.jpg"
+            data-aos="zoom-out"
+          />
+        </div>
+        <div class="fotoSimulador">
+          <img
+            class="gallery-image"
+            src="/img/foto obra casa.jpg"
+            data-aos="zoom-out"
+          />
+        </div>
+      </div>
+      <div class="lightbox" id="lightbox">
+        <img src="" alt="Lightbox Image" class="lightbox-image" />
+        <span class="close-btn" id="close-btn">&times;</span>
+      </div>
     </section>
     <section class="itemsServicios">
       <div class="items">
-        <div class="itemsContainer">
+        <div class="itemsContainer" data-aos="flip-right">
           <i class="fa-solid fa-pen" style="color: #000000"></i>
           <h2>Diseño</h2>
           <p>
@@ -70,7 +170,7 @@
         </div>
       </div>
       <div class="items">
-        <div class="itemsContainer">
+        <div class="itemsContainer" data-aos="flip-up">
           <i class="fa-solid fa-wrench" style="color: #000000"></i>
           <h2>Construccion</h2>
           <p>
@@ -82,7 +182,7 @@
         </div>
       </div>
       <div class="items">
-        <div class="itemsContainer">
+        <div class="itemsContainer" data-aos="flip-left">
           <i class="fa-solid fa-circle-info" style="color: #000000"></i>
           <h2>Asesoramiento</h2>
           <p>
@@ -109,5 +209,11 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- js main -->
+    <script src="../js/main.js"></script>
   </body>
 </html>
