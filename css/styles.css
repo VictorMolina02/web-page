@@ -268,7 +268,19 @@ footer {
   justify-content: center;
   margin-top: 20px;
 }
-
+.warning {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.warning h3 {
+  margin-top: 20px;
+  color: #b60c0c;
+}
 form {
   width: auto;
   height: 100%;
@@ -283,7 +295,7 @@ form {
 }
 .formContainer {
   width: auto;
-  height: 700px;
+  height: 750px;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -387,6 +399,9 @@ textarea {
   font-size: 30px;
   color: white;
   cursor: pointer;
+}
+.carousel {
+  display: none;
 }
 
 /* mediaqueries index */
@@ -497,5 +512,16 @@ textarea {
   }
   footer p {
     font-size: 10px;
+  }
+  .carousel {
+    margin-top: 20px;
+    display: block;
+    height: auto;
+  }
+  .fotocasa {
+    height: 309px;
+  }
+  .warning p {
+    font-size: 12px;
   }
 }
